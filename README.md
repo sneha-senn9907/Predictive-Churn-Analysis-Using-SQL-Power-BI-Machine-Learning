@@ -74,7 +74,8 @@ The project predicts potential future churners among newly joined customers, all
 
  
 ## Top Predictive Features:
-	Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential variables for 	churn prediction.
+	Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential variables for
+ 	churn prediction.
 ![image](https://github.com/user-attachments/assets/bbb5a353-ce07-49f1-8e11-743ba6faad23)
 
 
@@ -85,7 +86,9 @@ The project predicts potential future churners among newly joined customers, all
 
 
 # Conclusion:
-	Through a combination of data-driven analysis, predictive modeling, and interactive dashboards, this project successfully built an end-to-end churn 		prediction framework that empowers the business to not only understand historical churn patterns but also to take proactive action on future risks.
-	With 84% model accuracy, stakeholders can now prioritize customer retention efforts, optimize service offerings, and strategically address churn causes 	before they impact the bottom line.
+ Through a combination of data-driven analysis, predictive modeling, and interactive dashboards, this project successfully built an end-to-end churn
+ prediction framework that empowers the business to not only understand historical churn patterns but also to take proactive action on future risks.
+ With 84% model accuracy, stakeholders can now prioritize customer retention efforts, optimize service offerings, and strategically address churn causes 
+ before they impact the bottom line.
 
 
