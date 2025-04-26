@@ -36,25 +36,25 @@ The project predicts potential future churners among newly joined customers, all
 	order by Percentage desc
 
 # Key Findings:
-SQL + Power BI Analysis:
-1. Churn Rate Overview:
-Overall churn rate stands at a significant 27.0%.
-Of the 6,418 total customers, 1,732 customers churned.
-
-2.Age and Tenure Impact Churn:
-Older customers (50+) and those with tenure over 24 months show higher churn rates (31% and 28% respectively), requiring targeted retention efforts.
-
-3.Month-to-Month Contracts are Risky:
-Customers with month-to-month contracts churn at 46.5%, far higher than those on one- or two-year contracts.
-
-4. Payment Method Influence:
-Customers paying by Mailed Check (37.8%) and Bank Withdrawal (34.4%) churn significantly more than credit card users (14.8%).Credit card users are much more stable, suggesting digital payment preferences are linked to loyalty.
-
-5. Revenue Segmentation:
-'Stayed' customers continue to drive majority of the revenue. Churned customers, while significant in number, likely contribute lower revenue proportionally.
-
-6.Geographic Hotspots for Churn:
-Jammu & Kashmir (57.2%) and Assam (38.1%) are the worst-hit regions, suggesting regional service or competition issues.
-
-7.Fiber Optic Customers at Risk:
-Fiber Optic internet users churn at a concerning 41.1% rate, the highest among internet types.
+# SQL + Power BI Analysis:
+	1. Churn Rate Overview:
+	Overall churn rate stands at a significant 27.0%.
+	Of the 6,418 total customers, 1,732 customers churned.
+	
+	2.Age and Tenure Impact Churn:
+	Older customers (50+) and those with tenure over 24 months show higher churn rates (31% and 28% respectively), requiring targeted retention efforts.
+	
+	3.Month-to-Month Contracts are Risky:
+	Customers with month-to-month contracts churn at 46.5%, far higher than those on one- or two-year contracts.
+	
+	4. Payment Method Influence:
+	Customers paying by Mailed Check (37.8%) and Bank Withdrawal (34.4%) churn significantly more than credit card users (14.8%).Credit card users are much 	more stable, suggesting digital payment preferences are linked to loyalty.
+	
+	5. Revenue Segmentation:
+	'Stayed' customers continue to drive majority of the revenue. Churned customers, while significant in number, likely contribute lower revenue 			proportionally.
+	
+	6.Geographic Hotspots for Churn:
+	Jammu & Kashmir (57.2%) and Assam (38.1%) are the worst-hit regions, suggesting regional service or competition issues.
+	
+	7.Fiber Optic Customers at Risk:
+	Fiber Optic internet users churn at a concerning 41.1% rate, the highest among internet types.
