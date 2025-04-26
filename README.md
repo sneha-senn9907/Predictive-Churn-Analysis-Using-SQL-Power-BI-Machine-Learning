@@ -12,23 +12,23 @@ The project predicts potential future churners among newly joined customers, all
 5. Create a second Power BI dashboard highlighting predicted churners among newly joined customers.
 6. Visualize insights through intuitive and detailed Power BI dashboards for easy stakeholder communication.
 # Queries performed to understand the existing customer base :
-# 1.How is the customer base segmented by gender, and what proportion does each gender represent within the overall dataset?
+## 1.How is the customer base segmented by gender, and what proportion does each gender represent within the overall dataset?
   	select gender, COUNT(*) as TotalCount,
 	  CAST(round(count(*)*100.0/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
   	from customer_data
   	group by gender
-# 2.What is the distribution of contract types among customers, and how does each contract type contribute to the overall customer base in terms of count and percentage?
+## 2.What is the distribution of contract types among customers, and how does each contract type contribute to the overall customer base in terms of count and percentage?
 	select contract,COUNT(*) as TotalCount,
 	   CAST(round(count(*)*100.0/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
 	from customer_data
 	group by contract
- # 3.How does total customer count and revenue contribution vary across different customer status segments and what percentage of the overall revenue does each segment generate?"
+## 3.How does total customer count and revenue contribution vary across different customer status segments and what percentage of the overall revenue does each segment generate?"
 	select customer_status,COUNT(*) as TotalCount,round(SUM(total_revenue),2) as TotalRevenue,
 	  cast(round(Sum(total_revenue)*100/(Select sum(total_revenue) from customerdata),2) as decimal(4,2)) as RevPercentage
 	from customer_data
 	group by customer_Status
 
-# 4.How is the customer distribution spread across different states, and which states represent the highest proportion of the total customer base?
+## 4.How is the customer distribution spread across different states, and which states represent the highest proportion of the total customer base?
 	select State,COUNT(*) as TotalCount,
 	  CAST(round(COUNT(*)*100/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
 	from customer_data
@@ -36,7 +36,7 @@ The project predicts potential future churners among newly joined customers, all
 	order by Percentage desc
 
 # Key Findings:
-# SQL + Power BI Analysis:
+## SQL + Power BI Analysis:
 	1. Churn Rate Overview:
 	Overall churn rate stands at a significant 27.0%.
 	Of the 6,418 total customers, 1,732 customers churned.
@@ -59,29 +59,29 @@ The project predicts potential future churners among newly joined customers, all
 	7.Fiber Optic Customers at Risk:
 	Fiber Optic internet users churn at a concerning 41.1% rate, the highest among internet types.
 
-# Customer Churn Summary Dashboard:
+## Customer Churn Summary Dashboard:
 	Key metrics on gender, contract types, customer status, churn categories, and churn reasons (tooltips embedded).
 	Tooltips revealed churn reasons at a granular level across different churn categories, enhancing actionability.
 	"Competitor Offer," "Customer Service Issues," and "Price Sensitivity" emerged as the top churn reasons.
 	Churned customers were majorly low- to mid-revenue generators, suggesting high-value customers are relatively more loyal.
 	
 # Machine Learning Model Insights:
-# Model Performance:
+## Model Performance:
 	Achieved 84% accuracy on the validation dataset.
 	Precision: 87% for 'Stayed', 78% for 'Churned' customers.
 	Recall: Higher recall for staying customers; moderate recall for churners (65%).
  
-# Top Predictive Features:
+## Top Predictive Features:
 ![image](https://github.com/user-attachments/assets/bbb5a353-ce07-49f1-8e11-743ba6faad23)
 Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential variables for churn prediction.
 
-# Churn Prediction Dashboard:
+## Churn Prediction Dashboard:
 A dynamic visualization was created to list customers newly joined but predicted to churn soon.
 Filtering and drill-through features allow sales and retention teams to prioritize outreach.
 ![image](https://github.com/user-attachments/assets/c38ff199-ac0d-4043-85f4-5d88c8557e8e)
 
 
-## Conclusion:
+# Conclusion:
 	Through a combination of data-driven analysis, predictive modeling, and interactive dashboards, this project successfully built an end-to-end churn 		prediction framework that empowers the business to not only understand historical churn patterns but also to take proactive action on future risks.
 	With 84% model accuracy, stakeholders can now prioritize customer retention efforts, optimize service offerings, and strategically address churn causes 	before they impact the bottom line.
 
