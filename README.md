@@ -74,8 +74,8 @@ The project predicts potential future churners among newly joined customers, all
 
  
 ## Top Predictive Features:
-	Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential variables for
- 	churn prediction.
+	Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential 
+ 	variables for churn prediction.
 ![image](https://github.com/user-attachments/assets/bbb5a353-ce07-49f1-8e11-743ba6faad23)
 
 
