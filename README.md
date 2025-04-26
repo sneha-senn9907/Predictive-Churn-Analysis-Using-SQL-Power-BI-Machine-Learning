@@ -58,3 +58,19 @@ The project predicts potential future churners among newly joined customers, all
 	
 	7.Fiber Optic Customers at Risk:
 	Fiber Optic internet users churn at a concerning 41.1% rate, the highest among internet types.
+
+Customer Churn Summary Dashboard:
+	Key metrics on gender, contract types, customer status, churn categories, and churn reasons (tooltips embedded).
+	Tooltips revealed churn reasons at a granular level across different churn categories, enhancing actionability.
+	"Competitor Offer," "Customer Service Issues," and "Price Sensitivity" emerged as the top churn reasons.
+	Churned customers were majorly low- to mid-revenue generators, suggesting high-value customers are relatively more loyal.
+	
+# Machine Learning Model Insights:
+Model Performance:
+	Achieved 84% accuracy on the validation dataset.
+	Precision: 87% for 'Stayed', 78% for 'Churned' customers.
+	Recall: Higher recall for staying customers; moderate recall for churners (65%).
+ 
+Top Predictive Features:
+
+
