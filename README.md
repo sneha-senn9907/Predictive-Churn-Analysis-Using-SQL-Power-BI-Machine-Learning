@@ -70,6 +70,8 @@ The project predicts potential future churners among newly joined customers, all
 	Achieved 84% accuracy on the validation dataset.
 	Precision: 87% for 'Stayed', 78% for 'Churned' customers.
 	Recall: Higher recall for staying customers; moderate recall for churners (65%).
+ ![image](https://github.com/user-attachments/assets/f8e13fc1-66cc-4258-b821-3793f282ab92)
+
  
 ## Top Predictive Features:
 ![image](https://github.com/user-attachments/assets/bbb5a353-ce07-49f1-8e11-743ba6faad23)
