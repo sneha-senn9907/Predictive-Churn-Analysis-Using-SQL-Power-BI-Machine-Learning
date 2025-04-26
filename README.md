@@ -17,3 +17,21 @@ The project predicts potential future churners among newly joined customers, all
 	  CAST(round(count(*)*100.0/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
   	from customer_data
   	group by gender
+# 2.What is the distribution of contract types among customers, and how does each contract type contribute to the overall customer base in terms of count and percentage?
+	select contract,COUNT(*) as TotalCount,
+	   CAST(round(count(*)*100.0/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
+	from customer_data
+	group by contract
+ # 3.How does total customer count and revenue contribution vary across different customer status segments and what percentage of the overall revenue does each segment generate?"
+	select customer_status,COUNT(*) as TotalCount,round(SUM(total_revenue),2) as TotalRevenue,
+	  cast(round(Sum(total_revenue)*100/(Select sum(total_revenue) from customerdata),2) as decimal(4,2)) as RevPercentage
+	from customer_data
+	group by customer_Status
+
+# 4.How is the customer distribution spread across different states, and which states represent the highest proportion of the total customer base?
+	select State,COUNT(*) as TotalCount,
+	  CAST(round(COUNT(*)*100/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
+	from customer_data
+	group by state
+	order by Percentage desc
+
