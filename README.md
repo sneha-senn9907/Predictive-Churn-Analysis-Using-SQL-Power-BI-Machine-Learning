@@ -74,12 +74,13 @@ The project predicts potential future churners among newly joined customers, all
 
  
 ## Top Predictive Features:
+	Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential variables for 	churn prediction.
 ![image](https://github.com/user-attachments/assets/bbb5a353-ce07-49f1-8e11-743ba6faad23)
-Total Revenue, Contract Type, Total Charges, Monthly Charge, Total Long Distance Charges, and Age were identified as the most influential variables for churn prediction.
+
 
 ## Churn Prediction Dashboard:
-A dynamic visualization was created to list customers newly joined but predicted to churn soon.
-Filtering and drill-through features allow sales and retention teams to prioritize outreach.
+	A dynamic visualization was created to list customers newly joined but predicted to churn soon.
+	Filtering and drill-through features allow sales and retention teams to prioritize outreach.
 ![image](https://github.com/user-attachments/assets/c38ff199-ac0d-4043-85f4-5d88c8557e8e)
 
 
