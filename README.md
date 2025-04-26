@@ -13,7 +13,7 @@ The project predicts potential future churners among newly joined customers, all
 6. Visualize insights through intuitive and detailed Power BI dashboards for easy stakeholder communication.
 # Queries performed:
 # 1.How is the customer base segmented by gender, and what proportion does each gender represent within the overall dataset?
-  select gender, COUNT(*) as TotalCount,
+  	select gender, COUNT(*) as TotalCount,
 	  CAST(round(count(*)*100.0/(select count(*) from customerdata),2) as decimal(4,2)) as Percentage
-  from customer_data
-  group by gender
+  	from customer_data
+  	group by gender
